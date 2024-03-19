@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\ACM.dir/objects.a
+C:\Users\vbcpd\vscode\mingw64\mingw64\bin\ar.exe qc CMakeFiles\ACM.dir/objects.a @CMakeFiles\ACM.dir\objects1.rsp
+C:\Users\vbcpd\vscode\mingw64\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ACM.dir/objects.a -Wl,--no-whole-archive -o ACM.exe -Wl,--out-implib,libACM.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ACM.dir\linkLibs.rsp

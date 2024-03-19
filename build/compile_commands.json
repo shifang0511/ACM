@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/vbcpd/ACM/build",
+  "command": "C:\\Users\\vbcpd\\vscode\\mingw64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -o CMakeFiles\\ACM.dir\\helloworld.cpp.obj -c C:\\Users\\vbcpd\\ACM\\helloworld.cpp",
+  "file": "C:/Users/vbcpd/ACM/helloworld.cpp",
+  "output": "CMakeFiles/ACM.dir/helloworld.cpp.obj"
+}
+]
