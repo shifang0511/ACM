@@ -197,6 +197,54 @@ helloworld.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ACM.dir\build.make CMakeFiles/ACM.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
 
+merge_sort.obj: merge_sort.cpp.obj
+.PHONY : merge_sort.obj
+
+# target to build an object file
+merge_sort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ACM.dir\build.make CMakeFiles/ACM.dir/merge_sort.cpp.obj
+.PHONY : merge_sort.cpp.obj
+
+merge_sort.i: merge_sort.cpp.i
+.PHONY : merge_sort.i
+
+# target to preprocess a source file
+merge_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ACM.dir\build.make CMakeFiles/ACM.dir/merge_sort.cpp.i
+.PHONY : merge_sort.cpp.i
+
+merge_sort.s: merge_sort.cpp.s
+.PHONY : merge_sort.s
+
+# target to generate assembly for a file
+merge_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ACM.dir\build.make CMakeFiles/ACM.dir/merge_sort.cpp.s
+.PHONY : merge_sort.cpp.s
+
+quick_sort.obj: quick_sort.cpp.obj
+.PHONY : quick_sort.obj
+
+# target to build an object file
+quick_sort.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ACM.dir\build.make CMakeFiles/ACM.dir/quick_sort.cpp.obj
+.PHONY : quick_sort.cpp.obj
+
+quick_sort.i: quick_sort.cpp.i
+.PHONY : quick_sort.i
+
+# target to preprocess a source file
+quick_sort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ACM.dir\build.make CMakeFiles/ACM.dir/quick_sort.cpp.i
+.PHONY : quick_sort.cpp.i
+
+quick_sort.s: quick_sort.cpp.s
+.PHONY : quick_sort.s
+
+# target to generate assembly for a file
+quick_sort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ACM.dir\build.make CMakeFiles/ACM.dir/quick_sort.cpp.s
+.PHONY : quick_sort.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -213,6 +261,12 @@ help:
 	@echo ... helloworld.obj
 	@echo ... helloworld.i
 	@echo ... helloworld.s
+	@echo ... merge_sort.obj
+	@echo ... merge_sort.i
+	@echo ... merge_sort.s
+	@echo ... quick_sort.obj
+	@echo ... quick_sort.i
+	@echo ... quick_sort.s
 .PHONY : help
 
 

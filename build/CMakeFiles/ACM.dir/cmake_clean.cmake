@@ -4,6 +4,10 @@ file(REMOVE_RECURSE
   "ACM.pdb"
   "CMakeFiles/ACM.dir/helloworld.cpp.obj"
   "CMakeFiles/ACM.dir/helloworld.cpp.obj.d"
+  "CMakeFiles/ACM.dir/merge_sort.cpp.obj"
+  "CMakeFiles/ACM.dir/merge_sort.cpp.obj.d"
+  "CMakeFiles/ACM.dir/quick_sort.cpp.obj"
+  "CMakeFiles/ACM.dir/quick_sort.cpp.obj.d"
   "libACM.dll.a"
 )
 

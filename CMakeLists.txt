@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.12)
 project(ACM)
 
 # 添加源文件
-add_executable(ACM helloworld.cpp)
+add_executable(ACM helloworld.cpp merge_sort.cpp quick_sort.cpp)
 
 # 添加其他依赖库
 target_link_libraries(ACM PUBLIC library1 library2)

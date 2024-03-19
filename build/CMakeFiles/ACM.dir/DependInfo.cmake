@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/vbcpd/ACM/helloworld.cpp" "CMakeFiles/ACM.dir/helloworld.cpp.obj" "gcc" "CMakeFiles/ACM.dir/helloworld.cpp.obj.d"
+  "C:/Users/vbcpd/ACM/merge_sort.cpp" "CMakeFiles/ACM.dir/merge_sort.cpp.obj" "gcc" "CMakeFiles/ACM.dir/merge_sort.cpp.obj.d"
+  "C:/Users/vbcpd/ACM/quick_sort.cpp" "CMakeFiles/ACM.dir/quick_sort.cpp.obj" "gcc" "CMakeFiles/ACM.dir/quick_sort.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -4,5 +4,17 @@
   "command": "C:\\Users\\vbcpd\\vscode\\mingw64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -o CMakeFiles\\ACM.dir\\helloworld.cpp.obj -c C:\\Users\\vbcpd\\ACM\\helloworld.cpp",
   "file": "C:/Users/vbcpd/ACM/helloworld.cpp",
   "output": "CMakeFiles/ACM.dir/helloworld.cpp.obj"
+},
+{
+  "directory": "C:/Users/vbcpd/ACM/build",
+  "command": "C:\\Users\\vbcpd\\vscode\\mingw64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -o CMakeFiles\\ACM.dir\\merge_sort.cpp.obj -c C:\\Users\\vbcpd\\ACM\\merge_sort.cpp",
+  "file": "C:/Users/vbcpd/ACM/merge_sort.cpp",
+  "output": "CMakeFiles/ACM.dir/merge_sort.cpp.obj"
+},
+{
+  "directory": "C:/Users/vbcpd/ACM/build",
+  "command": "C:\\Users\\vbcpd\\vscode\\mingw64\\mingw64\\bin\\g++.exe   -g -Wall -Wextra -o CMakeFiles\\ACM.dir\\quick_sort.cpp.obj -c C:\\Users\\vbcpd\\ACM\\quick_sort.cpp",
+  "file": "C:/Users/vbcpd/ACM/quick_sort.cpp",
+  "output": "CMakeFiles/ACM.dir/quick_sort.cpp.obj"
 }
 ]
