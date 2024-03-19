@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.12)
 
 # 设置项目名称
-project(ACM)
+project(ACM CXX)
 
 aux_source_directory(. SRC_LIST)
 
