@@ -22,6 +22,5 @@ int main() {
     for(int i=0;i<n;i++)scanf("%d",&a[i]);
     merge_sort(a,0,n-1);
     for(int i=0;i<n;i++)printf("%d ",a[i]);
-    system("pause");
     return 0;
 }
