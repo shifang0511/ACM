@@ -17,7 +17,7 @@ int main()
         {
             x-=lowbit(x);
             ans++;
-            }
+        }
         cout<<ans<<" ";
     }
     return 0;
