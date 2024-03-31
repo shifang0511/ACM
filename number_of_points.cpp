@@ -22,7 +22,7 @@ int main()
 {
 ios::sync_with_stdio(false);cin.tie(0); 
 cin>>n>>m;
-for(int i=1;i<=n;i++) {p[i]=i;N[i]=1;}
+for(int i=1;i<=n;i++) {p[i]=i;num[i]=1;}
 while(m--){
 cin>>op;
 if(op[0]=='C'){
