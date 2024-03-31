@@ -26,7 +26,8 @@ void add(int k, int x) {
 void remove(int k) {
     if (k == 0) head = ne[head]; // 如果删除的是头元素，需要特殊处理
     else ne[k-1] = ne[k]; // 否则，将第k个元素的前一个元素的next指针指向第k个元素的下一个元素
-}int main()
+}
+int main()
 {
     init();
     int n;cin>>n;
