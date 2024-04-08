@@ -13,7 +13,7 @@ void add (int a, int b){
 }
 bool topsort()
 {
-    for(int i=0;i<n;i++){
+    for(int i=1;i<=n;i++){
         if(!d[i])q[++tt]=i;
     }
     while(tt>=hh){
@@ -21,10 +21,11 @@ bool topsort()
         for(int i=h[a];i!=-1;i=ne[i]){
             int b=e[i];
             d[b]--;
-            if(!b)q[++tt]=b;
+            if(!d[b])q[++tt]=b;
         }
     }
     if(tt==n-1)return 1;
+    return 0;
 }
 int main()
 {
@@ -37,7 +38,7 @@ int main()
     }
     if(topsort())
     {
-        for(int i=0;i<n;i=++)cout<<q[i]<<' ';
+        for(int i=0;i<n;i++)cout<<q[i]<<' ';
     }
-    cout<<-1<<endl;
+    else cout<<-1<<endl;
 }
