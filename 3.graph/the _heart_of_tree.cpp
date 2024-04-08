@@ -1,12 +1,14 @@
 #include<iostream>
 #include<cstring>
+#include <algorithm>
 using namespace std;
 
-const int N=1e5+10;int ans=N;
+const int N=1e5+10,M=N*2;int ans=N;
 int n,m;
-int h[N],e[N],ne[N],idx;bool st[N];
-void add(int a,int b){
-    e[idx]=b;ne[idx]=h[a];h[a]=idx++;
+int h[N],e[M],ne[M],idx;
+bool st[N];
+void add (int a, int b){
+    e[idx] = b; ne[idx]=h[a]; h[a]=idx++;
 }
 int dfs(int u)
 {
@@ -20,15 +22,15 @@ int dfs(int u)
             sum+=s;
         }
     }
-    res=max(res,ans);
-    ans=max(res,n-sum);
+    res=max(res,n-sum);
+    ans=min(ans,res);
     return sum;
 }
 int main()
 {
     cin>>n;
     memset(h,-1,sizeof h);
-    for(int i=0;i<-1;i++){
+    for(int i=0;i<n-1;i++){
         int a,b;cin>>a>>b;
         add(a,b);add(b,a);
     }
