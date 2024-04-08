@@ -14,7 +14,7 @@ void add (int a, int b){
 bool topsort()
 {
     for(int i=1;i<=n;i++){
-        if(!d[i])q[++tt]=i;
+        if(!d[i])q[++tt]=i;//注意，有编号的点是从1开始的
     }
     while(tt>=hh){
         int a=q[hh++];
