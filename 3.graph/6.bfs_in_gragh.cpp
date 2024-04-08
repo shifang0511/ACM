@@ -1,39 +1,47 @@
 #include<iostream>
-#include<cstring>
-#include <algorithm>
+#include<unordered_map>
 #include<queue>
+#include<string>
+#include<algorithm>
 using namespace std;
-
-const int N=1e5+10,M=N*2;int ans=N;
-int n,m;
-int h[N],e[M],ne[M],idx,dis[N];
-bool st[N];
-void add (int a, int b){
-    e[idx] = b; ne[idx]=h[a]; h[a]=idx++;
-}
-int bfs(int n){
-    queue<int>q;q.push(1);
-    memset(dis,-1,sizeof dis);
+const int N=1e5;
+unordered_map <string,int> dis;
+queue <string>q;
+string start;
+int bfs(string start){
+    string end="12345678x";
+    dis[start]=0;q.push(start);
+    int dx[4]={-1,0,1,0},dy[4]={0,1,0,-1};
     while(!q.empty()){
-        int k=q.front();q.pop();
-        if(k==n)return dis[k];
-        for(int i=h[k];i!=-1;i=ne[i]){
-            int j=e[i];
-            if(st[j]){
-                dis[j]=dis[k]+1;
-                q.push(j);
+    string t=q.front();
+    if(t==end)return dis[end];
+    int distance=dis[t];
+    q.pop();
+    int k=t.find('x');
+    int x=k/3,y=k%3;
+    for(int i=0;i<4;i++)
+    {
+        int a=x+dx[i],b=y+dy[i];
+        int tk=a*3+b;
+        if(a>=0&&a<3&&b>=0&&b<3){
+            swap(t[tk],t[k]);
+            if(!dis.count(t)){
+                dis[t]=distance+1;
+                q.push(t);
             }
+            swap(t[tk],t[k]);
         }
+    }
     }
     return -1;
 }
 int main()
 {
-    cin>>n>>m;
-    memset(h,-1,sizeof h);
-    for(int i=0;i<m;i++){
-        int a,b;cin>>a>>b;
-        add(a,b);add(b,a);
+    string end="12345678x";
+    for(int i=0;i<9;i++)
+    {
+        string t;cin>>t;start+=t;
     }
-    cout<<bfs(n);
+    cout<<bfs(start);
+    return 0;
 }
