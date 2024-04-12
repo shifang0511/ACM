@@ -1,9 +1,9 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
-const int N=510;
+const int N=510,M=1e5+10;
 int n1,n2,m;
-int h[N],e[N],ne[N],idx;
+int h[N],e[M],ne[M],idx;
 int match[N];
 bool st[N];
 void add(int a,int b)
@@ -18,7 +18,7 @@ bool find(int x){
             st[j]=1;
             if(!match[j]||find(match[j]))
             {
-                match[x]=j;
+                match[j]=x;
                 return 1;
             }
         }
