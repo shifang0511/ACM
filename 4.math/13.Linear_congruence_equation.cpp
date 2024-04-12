@@ -21,7 +21,7 @@ int main()
         cin>>a>>b>>m;
         int x,y;
         int d=exgcd(a,m,x,y);
-        if(d%m)cout<<"impossible"<<endl;
+        if(b%d)cout<<"impossible"<<endl;
         else cout<<(long long)x*(b/d)%m<<endl;
     }
     return 0;
