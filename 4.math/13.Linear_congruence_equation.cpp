@@ -19,9 +19,10 @@ int main()
     {
         int a,b,m;
         cin>>a>>b>>m;
-        if(a%m==0)cout<<"impossible"<<endl;
-        else exgcd(a,b,x,y);
-        cout<<x<<" "<<y<<endl;
+        int x,y;
+        int d=exgcd(a,m,x,y);
+        if(d%m)cout<<"impossible"<<endl;
+        else cout<<(long long)x*(b/d)%m<<endl;
     }
-
+    return 0;
 }   
