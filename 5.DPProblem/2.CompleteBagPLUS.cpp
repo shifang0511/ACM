@@ -1,8 +1,7 @@
-#include<iostream>
-#include<cmath>
-using namespace std; 
-int dp[1010][1010];
-int w[1010];int v[1010];
+#include<bits/stdc++.h>
+using namespace std;
+const int n=1010;
+int v[n],w[n],dp[n][n];
 int main()
 {
     int N,V;cin>>N>>V;
@@ -12,9 +11,8 @@ int main()
         for(int j=0;j<=V;j++)
         {
             dp[i][j]=dp[i-1][j];
-            if(j>=v[i])dp[i][j]=max(dp[i-1][j],dp[i-1][j-v[i]]+w[i]);
+            if(j>=v[i])dp[i][j]=max(dp[i][j],dp[i][j-v[i]]+w[i]);
         }
     }
-    cout<<dp[N][V]<<endl;
-
+    cout<<dp[N][V];
 }
